@@ -23,6 +23,12 @@ ember install @fleetbase/fleetops-data
 
 [Longer description of how to use the addon in apps.]
 
+Payloads expose the read-only `service_stops` array from internal API responses.
+Each descriptor identifies a route visit by `key`, `role`, `place_uuid`, tracking,
+status, and completion, independently of shared place/waypoint record identities.
+Use the descriptor key for destination selection; repeated visits to the same
+saved place must not be identified by the place ID alone.
+
 
 ## Contributing
 

@@ -20,6 +20,7 @@ export default class PayloadModel extends Model {
 
     /** @attributes */
     @attr('raw') meta;
+    @attr('raw') service_stops;
     @attr('string') cod_amount;
     @attr('string') cod_currency;
     @attr('string') cod_payment_method;
