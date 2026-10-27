@@ -27,6 +27,7 @@ export default class EntityModel extends Model {
 
     /** @attributes */
     @attr('string') name;
+    @attr('number', { defaultValue: 1 }) quantity;
     @attr('string') type;
     @attr('string') description;
     @attr('string', {
