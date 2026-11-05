@@ -67,6 +67,8 @@ export default class DriverModel extends Model {
     @attr('boolean') is_staff_linked;
     @attr('string') login_status;
     @attr('raw') meta;
+    /** Write-only team/freelance identity sent on create/edit; stored server-side in driver_identities. */
+    @attr('raw') identity;
 
     /** @dates */
     @attr('date') license_expiry;
