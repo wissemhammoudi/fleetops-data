@@ -154,6 +154,7 @@ export default class VehicleModel extends Model {
     @attr('raw') specs;
     @attr('raw') telematics;
     @attr('raw') meta;
+    @attr('string') paper_status;
 
     /** @dates */
     @attr('date') purchased_at;
